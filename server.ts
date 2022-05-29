@@ -6,7 +6,7 @@ const app=express();
 const port=process.env.PORT || 3000;
 import morgan from "morgan";
 import 'dotenv/config'
-import './db';
+//import './db';
 
 app.use(cors());
 app.get("/",(req:Request,res:Response)=>{

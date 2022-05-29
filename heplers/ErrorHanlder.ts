@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 
 
-export let error = ({ statusCode = 500, message }) => {
-  let customError: errorInterface;
+export let error = ({ statusCode = 500, message="" }) => {
+  let customError!: errorInterface;
   customError.message = message;
   customError.statusCode = statusCode;
   return customError;
